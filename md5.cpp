@@ -7,7 +7,13 @@
 #include "md5.h"
 
 #ifndef _MSC_VER
+
+#ifdef __APPLE__
+#include <machine/endian.h>
+#else
 #include <endian.h>
+#endif
+
 #endif
 
 
